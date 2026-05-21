@@ -21,4 +21,12 @@ console.log(person.weight);
 
 //remove the property from the object
 delete person["age"];
-console.log(person.age);
+console.log(person.age); 
+
+console.log("**looping object**")
+for(let x in person)
+{
+    //console.log(x); //printing the property name alone
+    //console.log(person[x]); //prints the values of the properties
+    console.log(x+" "+person[x]); //prints the property name and asociated values
+}
