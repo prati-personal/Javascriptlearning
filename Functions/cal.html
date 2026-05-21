@@ -1,0 +1,42 @@
+<html>
+    <head>
+        Calculator
+    </head>
+    <body>
+        <br>
+        <input id="value1"/>
+        <input id="value2"/>
+        <br>
+        <button id="addbtn">Add</button>
+        <button id="subbtn">Substract</button>
+        <button id="mulbtn">Multiply</button>
+        <p id="Result">  </p>
+    </body>
+    <script>
+        document.getElementById("addbtn").onclick=addtwonum;
+        document.getElementById("subbtn").onclick=subtwonum;
+        document.getElementById("mulbtn").onclick=multiplytwonum;
+        
+        function addtwonum()
+        {
+            let a=document.getElementById("value1").value;//capture the values
+            let b=document.getElementById("value2").value;
+            let Res=parseInt(a)+parseInt(b);
+            document.getElementById("Result").innerHTML=Res; /*display the result in the page itself*/
+        }
+        function subtwonum()
+        {
+            let a=document.getElementById("value1").value;//capture the values
+            let b=document.getElementById("value2").value;
+            let Res=parseInt(a)-parseInt(b);
+            document.getElementById("Result").innerHTML=Res; /*display the result in the page itself*/
+        }
+        function multiplytwonum()
+        {
+            let a=document.getElementById("value1").value;//capture the values
+            let b=document.getElementById("value2").value;
+            let Res=parseInt(a)*parseInt(b);
+            document.getElementById("Result").innerHTML=Res; /*display the result in the page itself*/
+        }
+    </script>
+</html>
